@@ -7,7 +7,7 @@ st.header('Audible Book Recomendation')
 book_data = pd.read_csv('./audible_book_data.csv')
 author_names = book_data['Author'].unique()
 author_names = np.insert(author_names, 0, 'all')
-tab1, tab2 = st.tabs(['Book Selection', 'Summary'])
+tab1, tab2, tab3 = st.tabs(['Book Selection', 'Summary', 'About'])
 with tab1:
     feature_names = ['all','audible','absurdist', 'abuse', 'abusive', 'account', 'acting', 'action',
     'active', 'activism', 'activist', 'actor', 'adaptation',
@@ -1256,4 +1256,28 @@ with tab2:
         st.scatter_chart(data = book_data, x = 'Reading Time (min)', y = 'Number of Reviews')
         st.scatter_chart(data = book_data, y = 'Rating', x = 'Number of Reviews')
         st.scatter_chart(data = book_data, y = 'Price', x = 'Number of Reviews')
+with tab3:
+    st.subheader('About the App')
+    bullets = '''
+    <ul>
+        <li>The app takes the book <b><i>name/author/genre </i></b> of interest as input. You need to write this in the search
+                box. If there is no input, it will show all the available books in the batabse. </li>
+        <li>You have the level of recomendation for your selection namely: <b><i>Gener, Global</i></b> </li>
+            <ul>
+            <li>The <b>Genre</b> will recomend you the books falling in the same genre and around it. </li>
+            <li>The <b>Global</b> method will recomend you the books in global databse context. </li>
+            </ul>
+        <li>The app allows you to select the books under search result and will recomend you according to to you selection
+        of level of recomendation.</li>
+        <li>On the second level of recomendation, the app will give you the books available in the database by the same author.</li>
         
+                '''
+    st.write('Hey There :wave:')
+    st.write(''' Thanks for visiting the app. The app is a part of my learning journey and is to demonstrate the use of
+             clustering. 
+             ''')
+    st.markdown('''**How to Use**  ''')
+    st.markdown(bullets, unsafe_allow_html=True )
+    email = 'com2aftab@gmail.com'
+    st.write(f'Please share your beedback @: {email}')
+
