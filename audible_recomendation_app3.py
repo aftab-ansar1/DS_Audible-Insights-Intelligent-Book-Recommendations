@@ -1261,8 +1261,8 @@ with tab3:
     bullets = '''
     <ul>
         <li>The app takes the book <b><i>name/author/genre </i></b> of interest as input. You need to write this in the search
-                box. If there is no input, it will show all the available books in the batabse. </li>
-        <li>You have the level of recomendation for your selection namely: <b><i>Gener, Global</i></b> </li>
+                box. If there is no input, it will show all the available books in the databse. </li>
+        <li>You have the level of recomendation for your selection namely: <b><i>Genre, Global</i></b> </li>
             <ul>
             <li>The <b>Genre</b> will recomend you the books falling in the same genre and around it. </li>
             <li>The <b>Global</b> method will recomend you the books in global databse context. </li>
