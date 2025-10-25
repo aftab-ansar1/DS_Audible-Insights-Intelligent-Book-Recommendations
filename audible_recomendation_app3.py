@@ -1270,7 +1270,7 @@ with tab3:
         <li>The app allows you to select the books under search result and will recomend you according to to you selection
         of level of recomendation.</li>
         <li>On the second level of recomendation, the app will give you the books available in the database by the same author.</li>
-        
+        <li>The <b>SUMMARY</b> page is showing the different visuals for the distribution of Autor, Genre, Rating, Proce and Reading time.</li>
                 '''
     st.write('Hey There :wave:')
     st.write(''' Thanks for visiting the app. The app is a part of my learning journey and is to demonstrate the use of
